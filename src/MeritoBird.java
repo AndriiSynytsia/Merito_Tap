@@ -1,25 +1,39 @@
-import java.awt.Color;
-import java.awt.Dimension;
+import java.awt.*;
+import java.util.Objects;
 
-import javax.swing.JPanel; //store all the pipes in the game
+import javax.swing.*;
 
 public class MeritoBird extends JPanel {
 
-    int boradWidth = 360; //width of the game window
-    int boradHeight = 640; //height of the game window
+    int boardWidth = 360; //width of the game window
+    int boardHeight = 640; //height of the game window
 
     //Images 
-    Image mbackgroundImg;
+    Image backgroundImg;
     Image birdImg;
     Image topPipeImg;
+    Image bottomPipeImg;
     
 
     MeritoBird() {
-        setPreferredSize(new Dimension(boradWidth, boradHeight)); //set the size of the game window
+        setPreferredSize(new Dimension(boardWidth, boardHeight)); //set the size of the game window
         setBackground(Color.blue); //set the background color of the game window
 
+        //load images
+        backgroundImg = new ImageIcon(getClass().getResource("/meritotapbg.png")).getImage();
+        birdImg = new ImageIcon((getClass().getResource("/meritotapbird.png"))).getImage();
+        topPipeImg = new ImageIcon((getClass().getResource("/toppillar.png"))).getImage();
+        bottomPipeImg = new ImageIcon((getClass().getResource("/bottompillar.png"))).getImage();
+    }
 
+    @Override
+    protected void paintComponent(Graphics g) {
+        super.paintComponent(g);
+        draw(g);
+    }
 
+    public void draw(Graphics g) {
+        g.drawImage(backgroundImg, 0, 0, boardWidth, boardHeight, null);
     }
 }
 
