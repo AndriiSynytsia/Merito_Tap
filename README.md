@@ -2,8 +2,6 @@
 
 > Tap to fly. Dodge the obstacles. Beat your high score.
 
-![Merito Tap banner]
-
 [![Platform](https://img.shields.io/badge/platform-[Android%20%7C%20iOS%20%7C%20Web%20%7C%20PC]-blue)]()
 [![Engine](https://img.shields.io/badge/engine-[Unity%20%7C%20Godot%20%7C%20Other]-lightgrey)]()
 [![Status](https://img.shields.io/badge/status-in%20development-orange)]()
@@ -19,9 +17,8 @@
 - Endless gameplay with gradually increasing difficulty
 - Local high score saved between sessions
 - Smooth, responsive physics
-- [Sound effects and music]
-- [Unlockable characters or skins]
-- [Daily challenges or leaderboards]
+- [Unlockable characters or skins] - to come
+- [Daily challenges or leaderboards] - to come maybe ....?
 
 ## Screenshots
 
@@ -49,14 +46,13 @@
 
 ### Requirements
 
-- [Engine and version, e.g. Unity 2022.3 LTS]
-- [Other tools or SDKs]
+- [VS code, or a working Java IDE]
 - Git
 
 ### Installation
 
 ```bash
-git clone https://github.com/[your-username]/merito-tap.git
+git clone https://github.com/AndriiSynytsia/Merito_Tap.git
 cd merito-tap
 ```
 
@@ -82,7 +78,6 @@ Merito/
 ├── bin/
 ├── lib/
 ├── src/
-│   ├── Main    # Empty folder
 │   ├── Merito.class         # ...
 │   ├── MErito.java          # ...
 │   ├── MeritoBird.java      # ...
@@ -135,11 +130,10 @@ This project is licensed under the [MIT] License. See the [LICENSE](LICENSE) fil
 
 - **Game design and development:** Bradley & Andrii
 - **Art:** Bradley Bosinney
-- **Fonts and libraries:** [List and links]
+- **Fonts and libraries:** 
 
 ## Contact
-
-Bradley Bosinney - bbosinney@gmail.com
-Andrii Synytsia - .........
+Bradley Bosinney 
+Andrii Synytsia 
 
 Project link: https://github.com/AndriiSynytsia/Merito_Tap.git
