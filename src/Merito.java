@@ -12,5 +12,11 @@ public class Merito {
         frame.setResizable(false); //makes the window not resizable
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //closes the window when the user clicks on the close button
         
+
+        MeritoBird meritoBird = new MeritoBird(); //creates an instance of the MeritoBird class
+        frame.add(meritoBird); //adds the instance of the MeritoBird class to
+        frame.pack(); //adds the instance of the MeritoBird class to the frame
+        frame.setVisible(true);
+        
     }
 }
