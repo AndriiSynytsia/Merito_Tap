@@ -1,0 +1,47 @@
+
+# Compiled Java files
+*.class
+
+# Java logs and crash reports
+*.log
+hs_err_pid*
+replay_pid*
+
+# Build output
+bin/
+out/
+build/
+dist/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Eclipse
+.settings/
+.project
+.classpath
+
+# NetBeans
+nbproject/private/
+nbbuild/
+nbdist/
+
+# VS Code
+.vscode/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary and backup files
+*.tmp
+*.bak
+*.swp
+*~
+
+# BlueJ
+*.ctxt
