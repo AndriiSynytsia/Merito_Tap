@@ -1,7 +1,10 @@
-import java.awt.*;
-import java.util.Objects;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Graphics;
+import java.awt.Image;
 
-import javax.swing.*;
+import javax.swing.ImageIcon;
+import javax.swing.JPanel;
 
 public class MeritoBird extends JPanel {
 
@@ -21,7 +24,7 @@ public class MeritoBird extends JPanel {
 
         //load images
         backgroundImg = new ImageIcon(getClass().getResource("/meritotapbg.png")).getImage();
-        birdImg = new ImageIcon((getClass().getResource("/meritotapbird.png"))).getImage();
+        birdImg = new ImageIcon((getClass().getResource("/meritoup.png"))).getImage();
         topPipeImg = new ImageIcon((getClass().getResource("/toppillar.png"))).getImage();
         bottomPipeImg = new ImageIcon((getClass().getResource("/bottompillar.png"))).getImage();
     }
