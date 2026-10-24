@@ -106,7 +106,7 @@ Merito/
 - [ ] Sound and music
 - [ ] More characters and themes
 - [ ] Leaderboards
-- [ ] Release on [store or platform]
+- [ ] Release on 
 
 ## Known Issues
 
