@@ -2,11 +2,14 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Image;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.ImageIcon;
 import javax.swing.JPanel;
+import javax.swing.Timer;
 
-public class MeritoBird extends JPanel {
+public class MeritoBird extends JPanel implements ActionListener {
 
     int boardWidth = 360; //width of the game window
     int boardHeight = 640; //height of the game window
@@ -37,6 +40,9 @@ public class MeritoBird extends JPanel {
 
     //game logic
     Bird bird;
+    int velocityY = 0; //velocity of the bird in the y direction
+
+    Timer gameLoop; //create an instance of the Timer class to control the game loop
 
     MeritoBird() {
         setPreferredSize(new Dimension(boardWidth, boardHeight)); //set the size of the game window
@@ -50,19 +56,33 @@ public class MeritoBird extends JPanel {
 
         //bird
         bird = new Bird(birdImg); //create an instance of the Bird class
+
+        //game timer
+        gameLoop = new Timer(1000/60, this); //Makes sure game runs at 60 frames per second
+        gameLoop.start(); //start the game loop
+
+
+
     } 
 
     @Override
-    protected void paintComponent(Graphics g) { //override the paintComponent method to draw the images on the game window
+    public void paintComponent(Graphics g) { //override the paintComponent method to draw the images on the game window
         super.paintComponent(g); //call the paintComponent method of the JPanel class to draw the background color
         draw(g);
     }
 
     public void draw(Graphics g) {
+        System.out.println("Draw"); //print "Drawing" to the console to check if the draw method is being called
+        //background
         g.drawImage(backgroundImg, 0, 0, boardWidth, boardHeight, null); //draw the background image on the game window
 
         //bird
         g.drawImage(bird.img, bird.x, bird.y, bird.width, bird.height, null); //draw the bird image on the game window
+
+    }
+    @Override 
+    public void actionPerformed(ActionEvent e) { //override the actionPerformed method to update the game logic
+        repaint(); //repaint the game window
     }
 }
 
