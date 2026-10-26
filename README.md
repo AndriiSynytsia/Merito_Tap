@@ -2,9 +2,9 @@
 
 > Tap to fly. Dodge the obstacles. Beat your high score.
 
-[![Platform](https://img.shields.io/badge/platform-[Android%20%7C%20iOS%20%7C%20Web%20%7C%20PC]-blue)]()
-[![Engine](https://img.shields.io/badge/engine-[Unity%20%7C%20Godot%20%7C%20Other]-lightgrey)]()
-[![Status](https://img.shields.io/badge/status-in%20development-orange)]()
+[![Platform](https://img.shields.io/badge/platform-[Android%20%7C%20%PC]-blue)]()
+[![Engine](https://img.shields.io/badge/engine-[Java%20%7C%20Godot%20%7C%20Other]-lightgrey)]()
+[![Status](https://img.shields.io/badge/status-in%20playable)]()
 [![License](https://img.shields.io/badge/license-[MIT]-green)](LICENSE)
 
 ## About
@@ -70,6 +70,7 @@ Merito/
 ├── .vscode/
 ├── bin/
 ├── lib/
+├── docs/
 ├── src/
 |   ├── assets/
 |   |    ├── bottompillar.png              # Game image
