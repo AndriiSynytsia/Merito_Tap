@@ -7,7 +7,7 @@ public class Merito {
         int boardWidth = 360;
         int boardHeight = 640;
 
-        JFrame frame = new JFrame("main.java.Merito_Tap.Merito Tap!");
+        JFrame frame = new JFrame("Merito Tap!");
         frame.setVisible(true); // Make the frame with game name visible
         frame.setSize(boardWidth, boardHeight); //Impliments the size of the window that we specified in the variables above
         frame.setLocationRelativeTo(null); //places the windows in the center of the screen
