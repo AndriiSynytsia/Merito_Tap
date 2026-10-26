@@ -59,16 +59,9 @@ cd merito-tap
 Then open the project in [your engine] and load the scene `[Scenes/MainMenu]`.
 
 ### Running the Game
-
-1. Open the project in [your engine].
-2. Open the scene `[Scenes/MainMenu]`.
-3. Press **Play**.
-
-### Building
-
-1. Go to **[File > Build Settings]**.
-2. Select your target platform: [Android / iOS / WebGL / Windows].
-3. Click **Build**
+1. Open the project in VScode, InteliJ or other programs able to run Java.
+2. copy the code.
+3. Click Run.
 
 ## Project Structure
 
@@ -78,35 +71,34 @@ Merito/
 ├── bin/
 ├── lib/
 ├── src/
-│   ├── Merito.class         # ...
-│   ├── MErito.java          # ...
-│   ├── MeritoBird.java      # ...
-├── bottompillar.png         # Game image
+|   ├── assets/
+|   |    ├── bottompillar.png              # Game image
+|   |    ├── meritodwn.png                 # Game image
+|   |    ├── mertotapbg.png                # Game image
+|   |    ├── meritoup.png                  # Game image
+|   |    ├── toppillar.png                 # Game image
+|   ├── main/
+|   |    ├── Merito.java                   # Frame code
+|   |    ├── MeritoBird.java               # Game code
 ├── LICENSE                  # MIT license for the game
-├── meritodwn.png            # Game image
-├── mertotapbg.png           # Game image
-├── meritoup.png             # Game image
-├── README.md                # Info about the game
-└── toppillar.png            # Game image
+├── Merito_Tap.iml           # ...
+└── README.md                # Info about the game
 ```
 
 ## Tech Stack
 
-- **Engine:** Java
+- **Engine:** Java IDE running & debugging
 - **Language:** Java
 - **Art:** Paint.NET
-- **Audio:** None
 
 ## Roadmap
 
 - [x] Core tap-to-fly mechanic
 - [x] Obstacle spawning and scoring
 - [x] High score saving
+- [ ] Proper flying animation
 - [ ] Main menu and settings
-- [ ] Sound and music
-- [ ] More characters and themes
-- [ ] Leaderboards
-- [ ] Release on 
+- [ ] Highscore
 
 ## Known Issues
 
