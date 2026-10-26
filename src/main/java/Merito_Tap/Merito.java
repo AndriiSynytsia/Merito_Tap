@@ -18,6 +18,7 @@ public class Merito {
         MeritoBird meritoBird = new MeritoBird(); //creates an instance of the main.java.Merito_Tap.MeritoBird class
         frame.add(meritoBird); //adds the instance of the main.java.Merito_Tap.MeritoBird class to
         frame.pack(); //adds the instance of the main.java.Merito_Tap.MeritoBird class to the frame
+        meritoBird.requestFocus(); // requests focus for the frame
         frame.setVisible(true); // makes the frame with game name visible
         
     }
