@@ -1,3 +1,5 @@
+package main.java.Merito_Tap;
+
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics;
@@ -49,10 +51,10 @@ public class MeritoBird extends JPanel implements ActionListener {
         setBackground(Color.blue); //set the background color of the game window
 
         //load images
-        backgroundImg = new ImageIcon(getClass().getResource("/meritotapbg.png")).getImage(); //load the background image
-        birdImg = new ImageIcon((getClass().getResource("/meritoup.png"))).getImage(); //load the bird image
-        topPipeImg = new ImageIcon((getClass().getResource("/toppillar.png"))).getImage(); //  load the top pipe image
-        bottomPipeImg = new ImageIcon((getClass().getResource("/bottompillar.png"))).getImage(); //load the bottom pipe image
+        backgroundImg = new ImageIcon(getClass().getResource("./assets/meritotapbg.png")).getImage(); //load the background image
+        birdImg = new ImageIcon(getClass().getResource("./assets/meritoup.png")).getImage(); //load the bird image
+        topPipeImg = new ImageIcon(getClass().getResource("./assets/toppillar.png")).getImage(); //  load the top pipe image
+        bottomPipeImg = new ImageIcon(getClass().getResource("./assets/bottompillar.png")).getImage(); //load the bottom pipe image
 
         //bird
         bird = new Bird(birdImg); //create an instance of the Bird class
